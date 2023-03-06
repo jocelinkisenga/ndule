@@ -41,6 +41,10 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
 
+    public function create(){
+        return view('auth.register');
+    }
+
     /**
      * Get a validator for an incoming registration request.
      *
@@ -63,7 +67,7 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\Models\User
      */
-    protected function create(array $data)
+    protected function store(array $data)
     {
         
         return User::create([
