@@ -45,7 +45,7 @@ Route::get('news',[ArticleController::class,'index'])->name('index');
 
 
 // ADMIN ROUTES
-Route::middleware(['auth','admin'])->group(function(){
+// Route::middleware(['auth','admin'])->group(function(){
     //GET ROUTES
     Route::get('song',[App\Http\Controllers\SongsController::class, 'create'])->name('song-form'); 
     Route::get('categorie/',[App\Http\Controllers\CategoriesController::class, 'create'])->name('categorie-form'); 
@@ -58,7 +58,7 @@ Route::middleware(['auth','admin'])->group(function(){
     Route::post('artiste',[ArtistController::class, 'store'])->name('create-artiste');
     Route::get('addAlbum',[AlbumController::class,'create'])->name('add-album');
 
-});
+// });
 
 Route::middleware('guest')->group(function(){
     Route::get('/login',[LoginController::class,'create'])->name('login');
