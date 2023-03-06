@@ -260,16 +260,16 @@ Purchase:
         <!----Queue Save Modal---->
             @livewireScripts
         <!--Main js file Style-->
-        <script type="text/javascript" src="{{asset('clients/js/jquery.js')}}"></script>
-        <script type="text/javascript" src="{{asset('clients/js/bootstrap.min.js')}}"></script>
-        <script type="text/javascript" src="{{asset('clients/js/plugins/swiper/js/swiper.min.js')}}"></script>
-        <script type="text/javascript" src="{{asset('clients/js/plugins/player/jplayer.playlist.min.js')}}"></script>
-        <script type="text/javascript" src="{{asset('clients/js/plugins/player/jquery.jplayer.min.js')}}"></script>
-        <script type="text/javascript" src="{{asset('clients/js/plugins/player/audio-player.js')}}"></script>
-        <script type="text/javascript" src="{{asset('clients/js/plugins/player/volume.js')}}"></script>
-        <script type="text/javascript" src="{{asset('clients/js/plugins/nice_select/jquery.nice-select.min.js')}}"></script>
-        <script type="text/javascript" src="{{asset('clients/js/plugins/scroll/jquery.mCustomScrollbar.js')}}"></script>
-        <script type="text/javascript" src="{{asset('clients/js/custom.js')}}"></script>
+        <script type="text/javascript" src="{{secure_asset('clients/js/jquery.js')}}"></script>
+        <script type="text/javascript" src="{{secure_asset('clients/js/bootstrap.min.js')}}"></script>
+        <script type="text/javascript" src="{{secure_asset('clients/js/plugins/swiper/js/swiper.min.js')}}"></script>
+        <script type="text/javascript" src="{{secure_asset('clients/js/plugins/player/jplayer.playlist.min.js')}}"></script>
+        <script type="text/javascript" src="{{secure_asset('clients/js/plugins/player/jquery.jplayer.min.js')}}"></script>
+        <script type="text/javascript" src="{{secure_asset('clients/js/plugins/player/audio-player.js')}}"></script>
+        <script type="text/javascript" src="{{secure_asset('clients/js/plugins/player/volume.js')}}"></script>
+        <script type="text/javascript" src="{{secure_asset('clients/js/plugins/nice_select/jquery.nice-select.min.js')}}"></script>
+        <script type="text/javascript" src="{{secure_asset('clients/js/plugins/scroll/jquery.mCustomScrollbar.js')}}"></script>
+        <script type="text/javascript" src="{{secure_asset('clients/js/custom.js')}}"></script>
     </body>
     
     </html>
