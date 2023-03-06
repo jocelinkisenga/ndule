@@ -8,11 +8,11 @@ use Illuminate\Http\Request;
 class AlbumController extends Controller
 {
     public function index(){
-        return view("pages.albums");
+        return view("page.albums");
     }
 
     public function create(){
         $albums = Album::all();
-        return view('admin.pages.addAlbum',compact('albums'));
+        return view('admin.page.addAlbum',compact('albums'));
 }
 }

@@ -10,7 +10,7 @@ class CategoriesController extends Controller
 {
     public function create(){
         $categories = CategorieRepositorie::get_all_categories();
-        return view("admin.pages.categorie.categories",compact("categories"));
+        return view("admin.page.categorie.categories",compact("categories"));
     }
 
     public function store(Request $request){
@@ -29,7 +29,7 @@ class CategoriesController extends Controller
         //             ], 200);
         // }
 
-        return view("pages.gospel",compact('song_categorie','categorie_name'));
+        return view("page.gospel",compact('song_categorie','categorie_name'));
 
  
 }

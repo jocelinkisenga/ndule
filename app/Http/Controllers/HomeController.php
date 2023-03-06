@@ -34,7 +34,7 @@ class HomeController extends Controller
         $latest  = HomeDatabaseRepositorie::new();
      
 
-        return view('pages.index',compact('weekly','latest'));
+        return view('page.index',compact('weekly','latest'));
     }
 
 
