@@ -41,7 +41,7 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
 
-    public function create(){
+    public function index(){
         return view('auth.register');
     }
 
@@ -67,7 +67,7 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\Models\User
      */
-    protected function store(array $data)
+    protected function create(array $data)
     {
         
         return User::create([
