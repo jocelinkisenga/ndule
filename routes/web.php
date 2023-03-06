@@ -7,6 +7,7 @@ use App\Http\Controllers\ArtistController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use Illuminate\Support\Facades\Route;
+use PharIo\Manifest\Url;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +23,10 @@ use Illuminate\Support\Facades\Route;
 
 
 
-
+Route::filter('https', function() {
+    if ( ! Request::secure())
+    return Redirect::secure(URI::current());
+    });
 
 
 
