@@ -1,0 +1,64 @@
+:root{
+    --blue-btn: rgba(59, 130, 246,1);
+    --white:#fff;
+}
+/* Class Colors and Btn */
+.bg-blue-btn{
+    background-color: var(--blue-btn);
+    color: var(--white);
+}
+.form-control{
+    color: #fff;
+    background-color: transparent;
+    display:block;width:100%;padding:.47rem .75rem;
+    font-size:.9rem;font-weight:400;
+    line-height:1.5;background-clip:padding-box;
+    border:1px solid #a2a2a3;-webkit-appearance:none;
+    -moz-appearance:none;appearance:none;border-radius:.25rem;
+    -webkit-transition:border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition:border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out
+}
+.section-title{
+    text-align: center;
+}
+.section-title h2{
+    color: yellow;
+}
+.btn {
+display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: normal;
+line-height: 1.42857143;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+-ms-touch-action: manipulation;
+touch-action: manipulation;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+}
+.d-flex{
+    display: flex;
+}
+div.text-center{
+    position: absolute;
+    right: 14.6%;
+}
+@media screen and (max-width: 400px) {
+    .d-flex{
+        display: block;
+    }
+}
+.btn_file2{
+    margin-left: 30px;
+}

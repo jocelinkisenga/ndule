@@ -1,0 +1,118 @@
+.products__content .song{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    /* z-index: -2; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: linear .3s;
+}
+.products__content.active .song{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    z-index: 2;
+    overflow: none;
+    background-color: var(--container-color);
+    padding: 0 5px;
+}
+.progression{
+    width: 100%;
+    /* height: 6px; */
+    /* background: rgb(41, 41, 41); */
+    /* border-radius: 1em; */
+}
+.progression .barre{
+    width: 100%;
+    height: 6px;
+    background: rgb(41, 41, 41);
+    border-radius: 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+.progression .temps{
+    position: relative;
+    width: 10%;
+    height: 6px;
+    background: linear-gradient(90deg,rgb(204, 253, 41), rgb(228, 252, 149));
+    border-radius: 1em 0 0 1em;
+}
+.progression .temps::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -3px;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 107, 0.911);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+.progression .barre:hover .temps::before{
+    opacity: 1;
+}
+.minuterie{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.minuterie span{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.minuterie i{
+    cursor: pointer;
+}
+.minuterie .in_pause{
+    display: none;
+}
+.minuterie .in_pause.active{
+    display: block;
+}
+.minuterie .in_play{
+    display: block;
+}
+.minuterie .in_play.active{
+    display: none;
+}
+
+
+
+audio{
+    cursor: pointer;
+    width: 0;
+    height: 0;
+}
+
+
+/* les infos du profil */
+.user_profil{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+}
+.user_profil.active{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+}

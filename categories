@@ -1,0 +1,65 @@
+[33mcommit 4b3d682749f45bb95f032c4d4437870154536740[m[33m ([m[1;36mHEAD -> [m[1;32mv1[m[33m, [m[1;31morigin/v1[m[33m)[m
+Author: jocelinkisenga <kisengajocelin7@gmail.com>
+Date:   Thu May 5 00:29:14 2022 +0200
+
+    ajout des categories
+
+[33mcommit f7ef63e22f8f2c4b259dd5b12805afa922779c72[m
+Author: jocelinkisenga <kisengajocelin7@gmail.com>
+Date:   Thu May 5 00:25:25 2022 +0200
+
+    resolution de l'authentification par telephone
+
+[33mcommit eacfbecbe96969e3d467199ce206d43fb408ad0f[m
+Author: jocelinkisenga <kisengajocelin7@gmail.com>
+Date:   Wed May 4 17:17:47 2022 +0200
+
+    ajout des routes
+
+[33mcommit 44baa00fa62e4d06f8a033674357f8f831602e97[m
+Author: jocelinkisenga <kisengajocelin7@gmail.com>
+Date:   Wed May 4 07:37:29 2022 +0200
+
+    configuration et geston de l'authentification
+
+[33mcommit bf2d8e17c2a7f5ac03858b24d03dc5707342715d[m
+Author: jocelinkisenga <kisengajocelin7@gmail.com>
+Date:   Tue May 3 19:55:31 2022 +0200
+
+    configuration des blades
+
+[33mcommit fa4c4e5f9045a385df1f9444d0dc697c61afdada[m
+Author: jocelinkisenga <kisengajocelin7@gmail.com>
+Date:   Mon May 2 20:06:01 2022 +0200
+
+    ajout de l'application laravel au projet
+
+[33mcommit dbf39765c94934457f595fe59ef041c7fa7a3686[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: elvinkyungu <elvinkyungu.75@gmail.com>
+Date:   Mon May 2 18:44:53 2022 +0200
+
+    first commit
+
+[33mcommit 85f44017e9b5b47962fcf71392dfe62b61c5344b[m
+Author: elvinkyungu <elvinkyungu.75@gmail.com>
+Date:   Mon May 2 15:29:26 2022 +0200
+
+    first commit
+
+[33mcommit 453c81550786ef82b859e0f5e3a8d475607041d3[m
+Author: elvinkyungu <elvinkyungu.75@gmail.com>
+Date:   Sat Apr 30 13:51:26 2022 +0200
+
+    first commit
+
+[33mcommit e6e99e20f0b5aa9aa1303e7988cfa682248d487f[m
+Author: elvinkyungu <elvinkyungu.75@gmail.com>
+Date:   Sat Apr 30 13:44:50 2022 +0200
+
+    first commit
+
+[33mcommit e4972b10ace835344529b9f8e8efe977316565bf[m
+Author: elvinkyungu <elvinkyungu.75@gmail.com>
+Date:   Sat Apr 30 13:43:54 2022 +0200
+
+    first commit
