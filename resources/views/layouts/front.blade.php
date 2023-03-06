@@ -22,14 +22,14 @@ Purchase:
     <meta name="author" content="kamleshyadav">
     <meta name="MobileOptimized" content="320">
     <!--Start Style -->
-    <link rel="stylesheet" type="text/css" href="/clients/css/fonts.cs">
-    <link rel="stylesheet" type="text/css" href="/clients/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="{{asset('clients/css/font-awesome.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('clients/js/plugins/swiper/css/swiper.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('clients/js/plugins/nice_select/nice-select.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('clients/js/plugins/player/volume.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('clients/js/plugins/scroll/jquery.mCustomScrollbar.css')}}">
-    <link rel="stylesheet" type="text/css" href="/clients/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{secure_asset('clients/css/fonts.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{secure_asset('clients/css/bootstrap.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{secure_asset('clients/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{secure_asset('clients/js/plugins/swiper/css/swiper.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{secure_asset('clients/js/plugins/nice_select/nice-select.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{secure_asset('clients/js/plugins/player/volume.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{secure_asset('clients/js/plugins/scroll/jquery.mCustomScrollbar.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{secure_asset('clients/css/style.css')}}">
     <!-- Favicon Link -->
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     @livewireStyles
