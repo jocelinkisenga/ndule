@@ -23,10 +23,7 @@ use PharIo\Manifest\Url;
 
 
 
-Route::filter('https', function() {
-    if ( ! Request::secure())
-    return Redirect::secure(URI::current());
-    });
+
 
 
 
