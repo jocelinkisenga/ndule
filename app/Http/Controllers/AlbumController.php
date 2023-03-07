@@ -8,7 +8,8 @@ use Illuminate\Http\Request;
 class AlbumController extends Controller
 {
     public function index(){
-        return view("page.albums");
+        $albums = Album::latest()->get();
+        return view("page.albums",compact('albums'));
     }
 
     public function create(){

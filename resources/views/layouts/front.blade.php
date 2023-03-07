@@ -1,18 +1,5 @@
 <!DOCTYPE html>
-<!-- 
-Template Name: Miraculous - Online Music Store Html Template
-Version: 1.0.0
-Author: Kamleshyadav
-Website: 
-Purchase: 
--->
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en">
-<!--<![endif]-->
-<!-- Begin Head -->
-
 <head>
     <title>Hkat-musique</title>
     <meta charset="utf-8">
@@ -39,7 +26,7 @@ Purchase:
 	<!----Loader Start---->
 	{{-- <div class="ms_loader">
 		<div class="wrap">
-		  <img src="{{asset('clients/images/loader.gif')}}" alt="">
+		  <img src="{{secure_asset('clients/images/loader.gif')}}" alt="">
 		</div>
 	</div> --}}
     <!----Main Wrapper Start---->
@@ -100,7 +87,7 @@ Purchase:
                                 <ul class="foo_con_info">
                                     <li>
                                         <div class="foo_con_icon">
-                                            <img src="{{asset('clients/images/svg/phone.svg')}}" alt="">
+                                            <img src="{{secure_asset('clients/images/svg/phone.svg')}}" alt="">
                                         </div>
                                         <div class="foo_con_data">
                                             <span class="con-title"> whatsapp <i class="fa fa-whatsapp" aria-hidden="true"></i> :</span>
@@ -109,7 +96,7 @@ Purchase:
                                     </li>
                                     <li>
                                         <div class="foo_con_icon">
-                                            <img src="{{asset('clients/images/svg/message.svg')}}" alt="">
+                                            <img src="{{secure_asset('clients/images/svg/message.svg')}}" alt="">
                                         </div>
                                         <div class="foo_con_data">
                                             <span class="con-title">email  :</span>
