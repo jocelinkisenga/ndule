@@ -19,14 +19,14 @@
 </head>
 <body class="hold-transition  sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
-    @include("Admin.navs.navbar")
-    @include("Admin.navs.aside")
+    @include("admin.navs.navbar")
+    @include("admin.navs.aside")
 
     @yield("content")
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
   </aside>
-    @include("Admin.navs.footer")
+    @include("admin.navs.footer")
 </div>
 <!-- ./wrapper -->
 
