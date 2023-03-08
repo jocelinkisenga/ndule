@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\Song;
+use App\Models\Vues;
 use Livewire\Component;
 
 class ButtonPlayer extends Component
@@ -16,6 +17,7 @@ class ButtonPlayer extends Component
     }
 
     public function play($id){
+        Vues::create(['song_id' => $id]);
         $song = Song::whereId($id)->first();
       
          $this->emit("songPlayer",$song);

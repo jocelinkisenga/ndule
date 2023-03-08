@@ -35,7 +35,7 @@
                                     </div>
                                 </div>
                                 <div class="weekly_right">
-                                    <span class="w_song_time">voir plus</span>
+                                    <span class="w_song_time">({{$item->vues->count()}}) lus</span>
                                     <span class="ms_more_icon" data-other="1">
 										<img src="{{asset('images/svg/more.svg')}}" alt="">									
 									</span>
