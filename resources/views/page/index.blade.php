@@ -7,7 +7,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
                             <div class="ms_banner_img">
-                                <img src="{{asset('clients/images/song.png')}}" alt="" class="img-fluid">
+                                <img src="{{secure_asset('clients/images/song.png')}}" alt="" class="img-fluid">
                             </div>
                             <div class="ms_banner_text ">
                                 <h1>c'est sur</h1>
@@ -47,7 +47,7 @@
 									</span>
                                     <div class="w_top_song">
                                         <div class="w_tp_song_img">
-                                            <img src="{{asset('uploads/images/'.$item->cover_art)}}" alt="" class="img-fluid">
+                                            <img src="{{secure_asset('uploads/images/'.$item->cover_art)}}" alt="" class="img-fluid">
                                             <div class="ms_song_overlay">
                                             </div>
                                             <livewire:button-player :musicid="$item->id">
@@ -61,7 +61,7 @@
                                 <div class="weekly_right">
                                     <span class="w_song_time">({{$item->vues->count()}}) lus</span>
                                     <span class="ms_more_icon" data-other="1">
-										<img src="{{asset('images/svg/more.svg')}}" alt="">									
+										<img src="{{secure_asset('images/svg/more.svg')}}" alt="">									
 									</span>
                                 </div>
                                 <ul class="more_option">
@@ -103,7 +103,7 @@
                                 <div class="w_top_song">
                                     <span class="slider_dot"></span>
                                     <div class="w_tp_song_img">
-                                        <img src="{{asset('uploads/images/'.$item->cover_art)}}" alt="">
+                                        <img src="{{secure_asset('uploads/images/'.$item->cover_art)}}" alt="">
                                         <div class="ms_song_overlay">
                                         </div>
                                         <livewire:button-player :musicid="$item->id">
@@ -138,11 +138,11 @@
                         <div class="swiper-slide">
                             <div class="ms_rcnt_box">
                                 <div class="ms_rcnt_box_img">
-                                    <img src="{{asset('uploads/images/'.$artist->image)}}" alt="">
+                                    <img src="{{secure_asset('uploads/images/'.$artist->image)}}" alt="">
                                     <div class="ms_main_overlay">
                                         <div class="ms_box_overlay"></div>
                                         <div class="ms_more_icon">
-                                            <img src="{{asset('clients/images/svg/more.svg')}}" alt="">
+                                            <img src="{{secure_asset('clients/images/svg/more.svg')}}" alt="">
                                         </div>
                                      
                                     </div>
