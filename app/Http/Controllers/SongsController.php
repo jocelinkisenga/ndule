@@ -12,6 +12,12 @@ class SongsController extends Controller
 {
     protected $categories;
 
+
+public function index(){
+    $songs = Song::latest()->get();
+    return view("page.songs",compact('songs'));
+}
+
 public function create(){
     $categories = Categorie::all();
     $songs = Song::latest()->with('categorie')->get();

@@ -14,8 +14,8 @@
                                 <h1 class="ms_color">Ndule !</h1>
                                 <p>promouvoir la musique locale<br> La meilleur plate-forme de streaming ...</p>
                                 <div class="ms_banner_btn">
-                                    <a href="#" class="ms_btn">Listen Now</a>
-                                    <a href="#" class="ms_btn">Add To Queue</a>
+                                    <a href="{{route('all-songs')}}" class="ms_btn">Ecouter maintenant</a>
+                                    {{-- <a href="#" class="ms_btn">Add To Queue</a> --}}
                                 </div>
                             </div>
                         </div>
@@ -126,7 +126,39 @@
                 <div class="swiper-button-prev2 slider_nav_prev"></div>
             </div>
             <!----Featured Albumn Section Start---->
-
+            <!---Featured Artists Music--->
+            <div class="ms_featured_slider">
+                <div class="ms_heading">
+                    <h1>Featured Artists</h1>
+                    <span class="veiw_all"><a href="#">view more</a></span>
+                </div>
+                <div class="ms_feature_slider swiper-container">
+                    <div class="swiper-wrapper">
+                        @foreach ($artists as $artist)
+                        <div class="swiper-slide">
+                            <div class="ms_rcnt_box">
+                                <div class="ms_rcnt_box_img">
+                                    <img src="{{asset('uploads/images/'.$artist->image)}}" alt="">
+                                    <div class="ms_main_overlay">
+                                        <div class="ms_box_overlay"></div>
+                                        <div class="ms_more_icon">
+                                            <img src="{{asset('clients/images/svg/more.svg')}}" alt="">
+                                        </div>
+                                     
+                                    </div>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                    <h3><a href="{{route('artiste-detail',['id'=>$artist->id])}}">{{$artist->name}}</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next1 slider_nav_next"></div>
+                <div class="swiper-button-prev1 slider_nav_prev"></div>
+            </div>
 			<!----Add Section Start---->
 			<div class="ms_advr_wrapper ms_advr2">
 				<div class="container">

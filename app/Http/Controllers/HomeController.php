@@ -7,6 +7,8 @@ use Auth;
 use App\Http\Repositories\HomeDatabaseRepositorie;
 use App\Http\Repositories\CategorieRepositorie;
 use App\Models\Categorie;
+use App\Models\Song;
+
 class HomeController extends Controller
 {
     
@@ -19,22 +21,15 @@ class HomeController extends Controller
      */
     public function index()
     { 
-        // $katanga_music = HomeDatabaseRepositorie::get_katanga_music();    
-        // $gospel_music = HomeDatabaseRepositorie::get_gospel_music();
-        // $international_music = HomeDatabaseRepositorie::get_international_music();
-        // $all_categories = CategorieRepositorie::get_all_categories();
-
-        // return response()->json([
-        //                         'katanga'=>$katanga_music,
-        //                         'gospel'=>$gospel_music,
-        //                         'international'=>$international_music
-        //                         ],200);
+ 
 
         $weekly = HomeDatabaseRepositorie::weekly();
         $latest  = HomeDatabaseRepositorie::new();
+        $artists = HomeDatabaseRepositorie::randomArtists();
+        $last = Song::latest()->limit(1)->get();
      
 
-        return view('page.index',compact('weekly','latest'));
+        return view('page.index',compact('weekly','latest','artists','last'));
     }
 
 

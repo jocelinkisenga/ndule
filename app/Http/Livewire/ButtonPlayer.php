@@ -16,10 +16,11 @@ class ButtonPlayer extends Component
     }
 
     public function play($id){
+        $song = Song::whereId($id)->first();
+      
+         $this->emit("songPlayer",$song);
+     
        
-        //  $this->emit("songPlayer",$this->song);
-        $this->song = Song::whereId($id)->get();
-       
-        $this->dispatchBrowserEvent('name-updated', ['song' => $this->song]);
+    //  $this->dispatchBrowserEvent('name-updated', ['song' => $song]);
     }
 }

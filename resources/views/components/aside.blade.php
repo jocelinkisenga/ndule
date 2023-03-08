@@ -13,24 +13,24 @@
         </div>
         <div class="ms_nav_wrapper">
             <ul>
-                <li><a href="{{route('home')}}" class="active" title="Discover">
+                <li><a href="{{route('home')}}" class="active" title="Acceuil">
                 <span class="nav_icon">
                     <span class="icon icon_discover"></span>
                 </span>
                 <span class="nav_text">
-                    Découvrez
+                    Accueil
                 </span>
                 </a>
                 </li>
-                <li><a href="{{route('albums')}}" title="Albums">
+                <li><a href="{{route('all-songs')}}" title="toutes les chansons">
                 <span class="nav_icon">
                     <span class="icon icon_albums"></span>
                 </span>
                 <span class="nav_text">
-                    albums
+                   toutes les chansons
                 </span>
                 </a>
-                </li>
+                </li> 
                 <li><a href="{{route('artists')}}" title="Artists">
                 <span class="nav_icon">
                     <span class="icon icon_artists"></span>
@@ -40,7 +40,7 @@
                 </span>
                 </a>
                 </li>
-                <li><a href="top_track.html" title="Top Tracks">
+                {{-- <li><a href="top_track.html" title="Top Tracks">
                 <span class="nav_icon">
                     <span class="icon icon_tracks"></span>
                 </span>
@@ -48,9 +48,9 @@
                     top tracks
                 </span>
                 </a>
-                </li>
+                </li> --}}
             </ul>
-            <ul class="nav_downloads">
+            {{-- <ul class="nav_downloads">
                 </li>
                 <li><a href="favourite.html" title="Favourites">
                 <span class="nav_icon">
@@ -81,7 +81,7 @@
                 </span>
                 </a>
                 </li>
-            </ul>
+            </ul> --}}
         </div>
     </div>
 </div>

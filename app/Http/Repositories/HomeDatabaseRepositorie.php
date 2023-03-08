@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Repositories;
 
+use App\Models\Artist;
 use App\Models\Categorie;
 use App\Models\Song;
 
@@ -29,5 +30,9 @@ class HomeDatabaseRepositorie {
 
 	public static function new() {
 		return Song::latest()->limit(4)->get();
+	}
+
+	public static function randomArtists(){
+		return Artist::latest()->inRandomOrder()->limit(15)->get();
 	}
 }

@@ -1,3 +1,7 @@
+@php
+    use App\Models\Song;
+    $last = Song::latest()->limit(1)->get();
+@endphp
 <div class="ms_header">
     <div class="ms_top_left">
         <div class="ms_top_search">
@@ -7,7 +11,7 @@
             </span>
         </div>
         <div class="ms_top_trend">
-            <span><a href="#"  class="ms_color">A la une :</a></span> <span class="top_marquee"><a href="#">Dream your moments, Until I Met You, Gimme Some Courage, Dark Alley (+8 More)</a></span>
+            <span><a href="#"  class="ms_color">A la une :</a></span> <span class="top_marquee"><a href="#">{{$last[0]->title}}</a></span>
         </div>
     </div>
     <div class="ms_top_right">

@@ -39,6 +39,7 @@ Route::get('/{slug}/{id}',[App\Http\Controllers\CategoriesController::class, 'sh
 Route::get('/albums',[AlbumController::class,'index'])->name('albums');
 Route::get('/artists',[ArtistController::class,'index'])->name('artists');
 Route::get('news',[ArticleController::class,'index'])->name('index');
+Route::get('allSongs',[App\Http\Controllers\SongsController::class,'index'])->name('all-songs');
 
 
 
