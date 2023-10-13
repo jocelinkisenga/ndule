@@ -16,7 +16,7 @@ class DashboardController extends Controller
         //         'count_users'=>$count_user
         //     ],200);
 
-        return view('admin.pages.dashboard');
+        return view('admin.page.dashboard');
     }
 
     private function count_songs(){

@@ -7,6 +7,7 @@ use App\Http\Controllers\ArtistController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use Illuminate\Support\Facades\Route;
+use PharIo\Manifest\Url;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,6 +39,7 @@ Route::get('/{slug}/{id}',[App\Http\Controllers\CategoriesController::class, 'sh
 Route::get('/albums',[AlbumController::class,'index'])->name('albums');
 Route::get('/artists',[ArtistController::class,'index'])->name('artists');
 Route::get('news',[ArticleController::class,'index'])->name('index');
+Route::get('allSongs',[App\Http\Controllers\SongsController::class,'index'])->name('all-songs');
 
 
 
@@ -61,9 +63,9 @@ Route::middleware(['auth','admin'])->group(function(){
 
 Route::middleware('guest')->group(function(){
     Route::get('/login',[LoginController::class,'create'])->name('login');
-    // Route::get('/register',[RegisterController::class,'create'])->name('register');
+    Route::get('/register',[RegisterController::class,'index'])->name('register');
     Route::post('/login',[LoginController::class,'store'])->name('login');
-    Route::post('/register',[RegisterController::class,'store'])->name('register');
+    Route::post('/register',[RegisterController::class,'create'])->name('register');
 });
 
 

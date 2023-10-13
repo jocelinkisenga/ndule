@@ -1,4 +1,4 @@
-@extends('Admin.layouts.app')
+@extends('admin.layouts.app')
 
 @section('content')
     <div class="content-wrapper">
@@ -20,7 +20,7 @@
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h4 class="modal-title">Ajouter un produit</h4>
+                                                <h4 class="modal-title">Ajouter un artiste</h4>
                                                 <button type="button" class="close" data-dismiss="modal"
                                                     aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
@@ -35,37 +35,18 @@
                                                         <!-- form start -->
                                                       
                                                             <div class="card-body">
-                                                              <form action="{{route('create-song')}}" method="POST" enctype="multipart/form-data">
+                                                              <form action="{{route('create-artiste')}}" method="POST" enctype="multipart/form-data">
                                                                 @csrf
                                                                 <div class="form-group">
-                                                                    <label for="exampleInputEmail1">titre</label>
-                                                                    <input type="text" name="title" class="form-control"
+                                                                    <label for="exampleInputEmail1">nom</label>
+                                                                    <input type="text" name="name" class="form-control"
                                                                         id="exampleInputEmail1" placeholder="">
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="exampleInputPassword1">artiste</label>
-                                                                    <input type="text" name="artist_name" class="form-control"
-                                                                        id="exampleInputPassword1" placeholder="">
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="exampleInputFile">son</label>
-                                                                    <div class="input-group">
-                                                                        <div class="custom-file">
-                                                                            <input type="file" name="song" class="custom-file-input" multiple
-                                                                                id="exampleInputFile">
-                                                                            <label class="custom-file-label"
-                                                                                for="exampleInputFile">Choose file</label>
-                                                                        </div>
-                                                                        <div class="input-group-append">
-                                                                            <span class="input-group-text">Upload</span>
-                                                                        </div>
-                                                                    </div>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label for="exampleInputFile">image</label>
                                                                     <div class="input-group">
                                                                         <div class="custom-file">
-                                                                            <input type="file" name="cover_at" class="custom-file-input" multiple
+                                                                            <input type="file" name="image" class="custom-file-input" multiple
                                                                                 id="exampleInputFile">
                                                                             <label class="custom-file-label"
                                                                                 for="exampleInputFile">Choose file</label>
@@ -75,21 +56,9 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="form-group">
-                                                                  <label for="exampleInputFile">selectionner une catégorie</label>
-                                                               
-                                                                    <select class="custom-select" name="Categorie_id" id="">
-                                                                      <option selected>Selectionner une cat...</option>
-                                                                      @foreach ($categories as  $item)
-                                                                          <option value="{{$item->id}}">{{$item->name}}</option>
-                                                                      @endforeach
-                                                               
-                                                                    </select>
-                                                                  
-                                                              </div>
                                                               <div class="form-group">
                                                                 <label for="exampleInputPassword1">description</label>
-                                                                <textarea type="text" name="description" class="form-control"
+                                                                <textarea type="text" name="bio" class="form-control"
                                                                     id=""></textarea>
                                                             </div>
                                                             </div>
@@ -151,17 +120,14 @@
                                         <tr>
                                             <th>ID</th>
                                             <th>nom</th>
-                                            <th>quantité</th>
-                                            <th>prix</th>
-                                            <th>categorie</th>
                                             <th>Détail</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                       @foreach ($songs as $key => $item )
+                                       @foreach ($artistes as $key => $item )
                                        <tr>
                                             <td>{{$key+1}}</td>
-                                            <td>{{$item->title}}</td>
+                                            <td>{{$item->name}}</td>
                                             <td><a href="">  <i class="fa fa-eye text-success" aria-hidden="true"></i></a></td>
                                           
                                             <td><a href=""><i class="fa fa-window-close text-warning" aria-hidden="true"></i></a></td>

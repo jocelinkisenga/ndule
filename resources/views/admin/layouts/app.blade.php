@@ -8,34 +8,34 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
-   <link rel="stylesheet" href="{{asset('Admin/plugins/fontawesome-free/css/all.min.css')}}"> 
+   <link rel="stylesheet" href="{{secure_asset('Admin/plugins/fontawesome-free/css/all.min.css')}}"> 
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="{{asset('Admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
+  <link rel="stylesheet" href="{{secure_asset('Admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
 
   <!-- Theme style -->
-  <link rel="stylesheet" href="{{asset('Admin/dist/css/adminlte.min.css')}}">
-    <link rel="stylesheet" href="{{asset('Client/assets/css/style.css')}}">
+  <link rel="stylesheet" href="{{secure_asset('Admin/dist/css/adminlte.min.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('Client/secure_assets/css/style.css')}}">
 
 </head>
 <body class="hold-transition  sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
-    @include("Admin.navs.navbar")
-    @include("Admin.navs.aside")
+    @include("admin.navs.navbar")
+    @include("admin.navs.aside")
 
     @yield("content")
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
   </aside>
-    @include("Admin.navs.footer")
+    @include("admin.navs.footer")
 </div>
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
 <!-- jQuery -->
-<script src="{{asset('Admin/plugins/jquery/jquery.min.js')}}"></script>
+<script src="{{secure_asset('Admin/plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap -->
-<script src="{{asset('Admin/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-<script src="{{ asset('admin/plugins/jquery/jquery.min.js') }}"></script>
+<script src="{{secure_asset('Admin/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{ secure_asset('admin/plugins/jquery/jquery.min.js') }}"></script>
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.min.js"></script> --}}
     <!-- Bootstrap -->
@@ -44,8 +44,8 @@
    
     <!-- PAGE admin/plugins -->
     <!-- jQuery Mapael -->
-    <script src="{{ asset('Client/assets/js/jquery.js') }}"></script>
-    <script src="{{ asset('Client/assets/js/printThis.js') }}"></script>
+    <script src="{{ secure_asset('Client/secure_assets/js/jquery.js') }}"></script>
+    <script src="{{ secure_asset('Client/secure_assets/js/printThis.js') }}"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
     <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
     <!-- ChartJS -->
@@ -157,22 +157,22 @@
 
     </script>
 <!-- overlayScrollbars -->
-<script src="{{asset('Admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
+<script src="{{secure_asset('Admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
 <!-- AdminLTE App -->
-<script src="{{asset('Admin/dist/js/adminlte.js')}}"></script>
-<script src="{{asset('Admin/dist/js/demo.js')}}"></script>
+<script src="{{secure_asset('Admin/dist/js/adminlte.js')}}"></script>
+<script src="{{secure_asset('Admin/dist/js/demo.js')}}"></script>
 <!-- PAGE admin/plugins -->
 <!-- jQuery Mapael -->
-<script src="{{asset('Admin/plugins/jquery-mousewheel/jquery.mousewheel.js')}}"></script>
-<script src="{{asset('Admin/plugins/raphael/raphael.min.js')}}"></script>
-<script src="{{asset('Admin/plugins/jquery-mapael/jquery.mapael.min.js')}}"></script>
-<script src="{{asset('Admin/plugins/jquery-mapael/maps/usa_states.min.js')}}"></script>
+<script src="{{secure_asset('Admin/plugins/jquery-mousewheel/jquery.mousewheel.js')}}"></script>
+<script src="{{secure_asset('Admin/plugins/raphael/raphael.min.js')}}"></script>
+<script src="{{secure_asset('Admin/plugins/jquery-mapael/jquery.mapael.min.js')}}"></script>
+<script src="{{secure_asset('Admin/plugins/jquery-mapael/maps/usa_states.min.js')}}"></script>
 <!-- ChartJS -->
-<script src="{{asset('Admin/plugins/chart.js/Chart.min.js')}}"></script>
+<script src="{{secure_asset('Admin/plugins/chart.js/Chart.min.js')}}"></script>
 
 <!-- AdminLTE for demo purposes -->
 
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{{asset('Admin/dist/js/pages/dashboard2.js')}}"></script>
+<script src="{{secure_asset('Admin/dist/js/pages/dashboard2.js')}}"></script>
 </body>
 </html>

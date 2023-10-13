@@ -8,6 +8,7 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -41,6 +42,10 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
 
+    public function index(){
+        return view('auth.register');
+    }
+
     /**
      * Get a validator for an incoming registration request.
      *
@@ -63,13 +68,17 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\Models\User
      */
-    protected function create(array $data)
+    protected function create(Request $request)
     {
         
         return User::create([
-            'name' => $data['name'],
-            'phone'=>$data['phone'],
-            'password' => Hash::make($data['password']),
+            'name' => $request->name,
+            'phone'=>$request->phone,
+            'password' => Hash::make($request->password),
         ]);
+
+        $request->session()->regenerate();
+
+        return redirect('/');
     }
 }

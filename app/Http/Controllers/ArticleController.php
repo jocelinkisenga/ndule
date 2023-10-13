@@ -13,12 +13,12 @@ class ArticleController extends Controller
     public $new_name;
 
     public function index(){
-        return view("pages.news");
+        return view("page.news");
     }
 
     public function create(){
         $articles = Article::all();
-        return view('Admin.pages.addArticle',compact('articles'));
+        return view('Admin.page.addArticle',compact('articles'));
     }
 
 

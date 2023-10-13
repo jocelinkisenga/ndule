@@ -1,4 +1,4 @@
-@extends('Admin.layouts.app')
+@extends('admin.layouts.app')
 
 @section('content')
     <div class="content-wrapper">
@@ -35,18 +35,18 @@
                                                         <!-- form start -->
                                                       
                                                             <div class="card-body">
-                                                              <form action="{{route('create-artiste')}}" method="POST" enctype="multipart/form-data">
+                                                              <form action="{{route('create-article')}}" method="POST" enctype="multipart/form-data">
                                                                 @csrf
                                                                 <div class="form-group">
-                                                                    <label for="exampleInputEmail1">nom</label>
-                                                                    <input type="text" name="name" class="form-control"
+                                                                    <label for="exampleInputEmail1">titre</label>
+                                                                    <input type="text" name="title" class="form-control"
                                                                         id="exampleInputEmail1" placeholder="">
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label for="exampleInputFile">image</label>
                                                                     <div class="input-group">
                                                                         <div class="custom-file">
-                                                                            <input type="file" name="image" class="custom-file-input" multiple
+                                                                            <input type="file" name="photo" class="custom-file-input" multiple
                                                                                 id="exampleInputFile">
                                                                             <label class="custom-file-label"
                                                                                 for="exampleInputFile">Choose file</label>
@@ -58,7 +58,7 @@
                                                                 </div>
                                                               <div class="form-group">
                                                                 <label for="exampleInputPassword1">description</label>
-                                                                <textarea type="text" name="bio" class="form-control"
+                                                                <textarea type="text" name="description" class="form-control"
                                                                     id=""></textarea>
                                                             </div>
                                                             </div>
@@ -124,10 +124,10 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                       @foreach ($artistes as $key => $item )
+                                       @foreach ($articles as $key => $item )
                                        <tr>
                                             <td>{{$key+1}}</td>
-                                            <td>{{$item->name}}</td>
+                                            <td>{{$item->title}}</td>
                                             <td><a href="">  <i class="fa fa-eye text-success" aria-hidden="true"></i></a></td>
                                           
                                             <td><a href=""><i class="fa fa-window-close text-warning" aria-hidden="true"></i></a></td>

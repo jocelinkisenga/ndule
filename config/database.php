@@ -3,10 +3,10 @@
 use Illuminate\Support\Str;
 
 // $url = parse_url(getenv("DATABASE_URL"));
-$host = "ec2-54-160-109-68.compute-1.amazonaws.com";
-$username = "jvknrtgywhoxkr";
-$password = "c0cfb966b9786872eb9d869c5727fe27090378ffd2e01f6edd4a8100f724d89b";
-$database = "d19d4jj9uau2it";
+$host = "ec2-44-205-41-76.compute-1.amazonaws.com";
+$username = "edkahrhullxuzc";
+$password = "09f50d44d06411669217699ba2dcd6325a51c886e79f13a1b1efc089f8bc511f";
+$database = "d66d1c7a0v7147";
 
 return [
 

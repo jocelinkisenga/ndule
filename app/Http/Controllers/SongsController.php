@@ -12,10 +12,16 @@ class SongsController extends Controller
 {
     protected $categories;
 
+
+public function index(){
+    $songs = Song::latest()->get();
+    return view("page.songs",compact('songs'));
+}
+
 public function create(){
     $categories = Categorie::all();
     $songs = Song::latest()->with('categorie')->get();
-    return view('admin.pages.songs.songs',compact('categories','songs'));
+    return view('admin.page.songs.songs',compact('categories','songs'));
 }
     
     public function store(Request $request ){
