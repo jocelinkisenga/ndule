@@ -30,6 +30,7 @@ Purchase:
     <link rel="stylesheet" type="text/css" href="{{asset('clients/js/plugins/player/volume.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('clients/js/plugins/scroll/jquery.mCustomScrollbar.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('clients/css/style.css')}}">
+<meta name="google-adsense-account" content="ca-pub-2002326101028358">
     <!-- Favicon Link -->
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     @livewireStyles
