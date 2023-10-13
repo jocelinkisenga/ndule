@@ -18,6 +18,8 @@
         <meta property="og:description" content="A propos de Hkat-Musique : Hkat-Musique c'est une plateforme qui vous propose de la bonne musique katangaise, gospel et International selon vos préférences"/>
         <meta name="facebook:title" content="Hkat-Musique" />
         <link rel="shortcut icon" href="{{asset('assets/img/favicon.ico')}}" type="image/x-icon">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2002326101028358"
+     crossorigin="anonymous"></script>
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/base.css')}}">
