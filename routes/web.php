@@ -46,7 +46,7 @@ Route::get('allSongs',[App\Http\Controllers\SongsController::class,'index'])->na
 
 
 // ADMIN ROUTES
-Route::middleware(['auth','admin'])->group(function(){
+Route::middleware(['auth'])->group(function(){
     //GET ROUTES
     Route::get('song',[App\Http\Controllers\SongsController::class, 'create'])->name('song-form'); 
     Route::get('categorie/',[App\Http\Controllers\CategoriesController::class, 'create'])->name('categorie-form'); 
